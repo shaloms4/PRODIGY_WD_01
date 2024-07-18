@@ -2,35 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Space Science and Research</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mini Sweets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="navbar">
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <button class="hamburger" onclick="toggleMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </button>
-        <ul class="nav-links">
-            <li class="nav-text" style="display: none;">X</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Technology</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">Partners</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
+    <header class="header">
+        <a href="#" class="logo"><i class="las la-cookie-bite"></i>Mini Sweets</a>
+        <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#contact">contact</a>
+        </nav>
 
-    <div class="main-header">
-        <h1>Space Science and Research<br>for Innovators</h1>
-        <p>Empowering innovators to explore and advance space science.</p>
-        <a href="#" class="cta-button">Start exploring for free</a>
-    </div>
-
-    <script src="script.js"></script>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Discover the <br> taste of real <br> cakes </h3>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </section>
+    <h1 class="heading">about us</h1>
+        <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img src="image/about-image.jpg" alt="about">
+            </div>
+            <div class="content">
+                <h3>What makes our bakery special?</h3>
+                <div class="line"></div>
+                <p>At our bakery, we take pride in using the finest ingredients and traditional recipes to create delightful treats. From freshly baked pastries to decadent cakes, each bite is a taste of perfection. Come and experience the magic of our baked goods!</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
 </body>
 </html>
